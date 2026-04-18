@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+#header{
+    text-align: center;
+    background-color: blue;
+    height: 100px;
+}
+
+.imagem-exemplo{
+    width: 150px;
+    border-radius: 10px;
+}
+
+.menu-navegacao a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    padding: 20px;
+}
+
+h1{
+    color: black;
+    font-size: 24px;
+}
+
+h2{
+    color: black;
+    font-size: 18px;
+}
+
+p{
+    color: blue;
+    font-size: 14px;
+}
+
+#videos img{
+    width: 500px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.carrossel{
+    text-align: center;
+}
+
+.carrossel img{
+width: 300px;
+border-radius: 10px;
+vertical-align: middle;
+}
+#header #logo{
+left: 10px;
+}
+#header img{
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+}
+#main-pagina-home #h1{
+color: black;
+font-weight: bold;
+font-size: 20px;
+}
+
+#main-pagina-home p{
+color: rgb(97, 112, 243);
+font-size: 15px;
+}

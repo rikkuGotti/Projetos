@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Exemplo de página inicial com menu, seções e carrossel manual.">
+    <meta name="author" content="Planets Web">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style-ola.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Planets Discovery | Home</title>
+</head>
+<body>
+    <!-- Acessibilidade -->
+    <a href="#main-pagina-home" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Início Menu -->
+    <header id="header">
+        <a id="logo" href="./index.html" aria-label="Go to homepage">
+            <img src="./img/logo planetas.avif" alt="Logo Planets Discovery" class="imagem-exemplo" loading="lazy">
+        </a>
+
+        <nav class="menu-navegação" aria-label="Main menu">
+            <button id="btn-mobile" aria-label="Open Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false" type="button">
+                <span id="hamburger" aria-hidden="true"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li role="none"><a role="menuitem" href="#quem-somos">Quem Somos</a></li>
+                <li role="none"><a role="menuitem" href="#produtos">Produtos</a></li>
+                <li role="none"><a role="menuitem" href="#videos">Vídeos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim Menu -->
+
+    <!-- Inicio Main -->
+    <main id="main-pagina-home">
+        <section id="quem-somos">
+            <h1>Este é meu título</h1>
+            <h2>Este é meu subtítulo</h2>
+            <p>Olá Mundo</p>
+        </section>
+
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <p>Conheça nossos produtos...</p>
+        </section>
+
+        <section id="videos">
+            <h2>Vídeos</h2>
+            <div class="carrossel">
+                <div class="slide"><img src="./img/OIP.avif" alt="Slide 1" loading="lazy"></div>
+                <div class="slide"><img src="./img/aa.avif" alt="Slide 2" loading="lazy"></div>
+                <div class="slide"><img src="./img/OIP.avif" alt="Slide 3" loading="lazy"></div>
+            </div>
+            <button class="Voltar" onclick="mudarSlide(-1)" aria-label="Previous slide">&#10094;</button>
+            <button class="Seguinte" onclick="mudarSlide(1)" aria-label="Next slide">&#10095;</button>
+        </section>
+    </main>
+
+    <!-- Script do carrossel manual -->
+    <script>
+        let slideAtual = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function mudarSlide(direcao){
+            slides[slideAtual].style.display = 'none';
+            slideAtual += direcao;
+            if (slideAtual >= slides.length) slideAtual = 0;
+            if (slideAtual < 0) slideAtual = slides.length - 1;
+            slides[slideAtual].style.display = 'block';
+        }
+
+        // Iniciar carrossel
+        slides.forEach((slide, index) => {
+            slide.style.display = index === 0 ? 'block' : 'none';
+        });
+
+        // Troca automática a cada 3 segundos
+        setInterval(() => mudarSlide(1), 3000);
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

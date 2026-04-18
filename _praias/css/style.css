@@ -1,0 +1,40 @@
+:root{
+    --areia: #f3e7c9;
+    --espulma: #fffaf1;
+    --oceano: #0a5c78;
+    --oceano-profundo: #073b4c;
+    --turqueza: #16a6b6;
+    --sol: #f5a623;
+    --coral: #eb6f4d;
+    --texto: #13313f;
+    --texto-suave: #4f6c77;
+    --borda: rgba(7,59, 76, 0.12);
+    --sombra: rgba(7, 59, 76, 0.16);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    /*Próxima aula instalarmos fonte com Google API's > Manrope */
+    color: var(--texto);
+    background: radial-gradient(circle  at top right,
+    rgba(245, 166, 35, 0.18), transparent 18%),linear-gradient(180deg, #f6fbfc 0%, #eef7f8 35%, #fff9f5 100%);
+}
+
+img{
+    display: top;
+    width: 100%;
+}
+
+a{
+    color: inherit;
+}
+/*Iremos tratar o CSS as class na próxima aula.*/

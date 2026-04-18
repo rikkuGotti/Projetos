@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Planets Discovery | Home</title>
+
+  <!-- SEO básico -->
+  <meta name="description"
+    content="Planets Discovery: lançamentos, coleções de reliquias, novidades e galeria. Página inicial responsiva com Bootstrap." />
+  <meta name="author" content="Planets Web" />
+
+  <!-- CSS (ordem: frameworks -> seu CSS) -->
+  <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+  <!-- Fontes (mantidas para compatibilidade com seu projeto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+Egyptian+Hieroglyphs&family=Open+Sans:wght@500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Acessibilidade: pular direto para o conteúdo -->
+  <a href="#conteudo" class="visually-hidden-focusable">Pular para o conteúdo principal</a>
+
+  <!-- Início Menu -->
+  <header id="header">
+    <a id="logo" href="./index.html" aria-label="Ir para a página inicial">
+      <img src="./img/logo planetas.avif" alt="Logo Planets Discovery" />
+    </a>
+
+    <nav id="nav" aria-label="Menu principal">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"
+        type="button">
+        <span id="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <ul id="menu" role="menu">
+        <li role="none"><a class="linkMenu" role="menuitem" href="./index.html" aria-current="page">Home</a></li>
+        <li role="none"><a class="linkMenu" role="menuitem" href="./quemsomos.html">Quem Somos</a></li>
+        <li role="none"><a class="linkMenu" role="menuitem" href="./produtos.html">Produtos</a></li>
+        <li role="none"><a class="linkMenu" role="menuitem" href="./videos.html">Vídeos</a></li>
+        <li role="none"><a class="linkMenu" role="menuitem" href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Fim Menu -->
+
+  <!-- Conteúdo principal -->
+  <main id="conteudo">
+    <!-- Texto Alternativo (mantido para compatibilidade com seu CSS/JS) -->
+    <section aria-label="Texto alternativo" id="hieroglyph"></section>
+
+    <!-- Carousel Página Principal -->
+    <section aria-label="Destaques em banner">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="none">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="800">
+            <img src="./img/carousel_1_1280-x-720-gaming.jpg" class="d-block w-100"
+              alt="Banner de destaque 1: ambiente gamer" />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="800">
+            <img src="./img/aa.avif" class="d-block w-100" alt="Banner de destaque 2: novidades para gamers"
+              loading="lazy" />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="8000">
+            <img src="./img/carousel_3_1280-x-720-gaming.jpg" class="d-block w-100"
+              alt="Banner de destaque 3: lançamentos do mês" loading="lazy" />
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button"
+          data-bs-slide="prev" aria-label="Voltar banner">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button"
+          data-bs-slide="next" aria-label="Avançar banner">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+    <!-- Fim Carousel -->
+    <!-- Início Banner -->
+    <section class="section-banner-home" aria-label="Chamada principal">
+      <div class="container-fluid">
+        <div class="row m-o">
+          <div class="col-12 col-md-6">
+            <figure>
+              <img src="img/aa.avif" alt="Banner: Lançamentos de Espaço Naves em 2026" loading+"lazy">
+            </figure>
+          </div>
+          <div class="col-12 col-md-6">
+            <section class="texto-banner d-none d-md-block" aria-label="Mensagem Principal">
+              <h1>Conheça os lançamentos de Espaços Naves em 2026</h1>
+              <p class="d-none d-md-block">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, provident! Architecto vitae aut,
+                eveniet quasi repellendus voluptas corporis tempora numquam vero, illum, corrupti nostrum nihil
+                similique illo quia cum perspiciatis.
+              </p>
+              <a href="#" aria-label="Saiba mais sobre os lançamentos">Saiba mais</a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Fim Banner -->
+ <!-- Início Destaque -->
+  <section class="col-6 col-md-2 pr-0">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <header class="col-12">
+          <h2>Conheça as coleções de Foguetes Históricos</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus assumenda pariatur exercitationem culpa, dignissimos facilis quo id molestias reprehenderit quaerat libero error consequuntur aspernatur porro maiores aliquam! Eveniet, architecto error.</p>
+        </header>
+        <!-- Início Destaque 01 -->
+        <div class="col-6 col-md-2 pr-0">
+          <figure>
+            <a href="./produtos.html" aria-label="Ver detalhes da Espaço nave Spirit">
+              <img src="./img/destaque-01.jpg" alt="Nave Spirit" width="100%" loading="lazy">
+            </a>
+            <figcaption>Nave Spirit <br> 1999</figcaption>
+          </figure>
+        </div>
+<!-- Fim Destaque 01 -->
+  <!-- Início Destaque 02 -->
+        <div class="col-6 col-md-2 pr-0">
+          <figure>
+            <a href="./produtos.html" aria-label="Ver detalhes da Espaço nave AirWay">
+              <img src="./img/airway.jpg" alt="Nave AirWay" width="100%" loading="lazy">
+            </a>
+            <figcaption>Air Way <br> 1999</figcaption>
+          </figure>
+        </div>
+<!-- Fim Destaque 02 -->
+   <!-- Início Destaque 03 -->
+        <div class="col-6 col-md-2 pr-0">
+          <figure>
+            <a href="./produtos.html" aria-label="Ver detalhes do Ônibus Espacial">
+              <img src="./img/onibuseapacial.jpg" alt="Nave AirWay" width="100%" loading="lazy">
+            </a>
+            <figcaption>Ônibus Espacial <br> 1999</figcaption>
+          </figure>
+        </div>
+<!-- Fim Destaque 03 -->
+   <!-- Início Destaque 04 -->
+        <div class="col-6 col-md-2 pr-0">
+          <figure>
+            <a href="./produtos.html" aria-label="Ver detalhes do Foguete3">
+              <img src="./img/foguete3.jpg" alt="Nave AirWay" width="100%" loading="lazy">
+            </a>
+            <figcaption>Foguete 03 <br> 1999</figcaption>
+          </figure>
+        </div>
+<!-- Fim Destaque 04 -->
+   <!-- Início Destaque 05 -->
+        <div class="col-6 col-md-2 pr-0">
+          <figure>
+            <a href="./produtos.html" aria-label="Ver detalhes do foguete2">
+              <img src="./img/foguete2.jpg" alt="Nave AirWay" width="100%" loading="lazy">
+            </a>
+            <figcaption>Foguete 02 <br> 1999</figcaption>
+          </figure>
+        </div>
+<!-- Fim Destaque 05 -->
+   <!-- Início Destaque 06 -->
+        <div class="col-6 col-md-2 pr-0">
+          <figure>
+            <a href="./produtos.html" aria-label="Ver detalhes do Foguete 01">
+              <img src="./img/foguete1.jpg" alt="Foguete 01" width="100%" loading="lazy">
+            </a>
+            <figcaption>Foguete01 <br> 1999</figcaption>
+          </figure>
+        </div>
+<!-- Fim Destaque 06 -->
+      </div>
+    </div>
+
+  </section>
+ <!-- Fim Destaque -->
+
+ <!-- Início Novidades -->
+  <section class="novidades" id="novidades-mobile" aria-label="Novidades">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <section class="text-body" aria-label="Texto Novidades">
+        <h2>Conheça as novidades do mundo da Astronomia</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, enim rem. Id quas delectus iusto molestiae voluptate laborum labore dolorem? Quasi fuga ex vitae, minus corporis aperiam facilis temporibus vel!
+        </p>
+        <a class="btn-banner" href="#" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
+      </section>
+    </div>
+    <div class="col-md-6">
+      <figure >
+        <img class="img-fluid" src="./img/banner-novidades01.jpg" alt="Banner: novidades Espaciais" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</div>
+
+  </section>
+  <!-- Fim Novidades -->
+   <!-- Galeria -->
+    <section class="galeria d-flex align-itens-center" aria-label="Galeria de Imagens">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <section class="texto-galeria" aria-label="introdução a galeria">
+              <h2>Conheça nossa galeria de Relíquias</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima enim provident quidem voluptates voluptas, impedit eos ab exercitationem cupiditate dolore temporibus quis saepe! Ratione vitae sit molestias est, aliquid illum!
+              </p>
+            </section>
+          </div>
+          <!-- Início Imagem 1 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 1 -->
+          <!-- Início Imagem 2 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 2 -->
+          <!-- Início Imagem 3 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 3 -->
+          <!-- Início Imagem 4 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 4 -->
+          <!-- Início Imagem 5 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 5 -->
+          <!-- Início Imagem 6 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 6 -->
+          <!-- Início Imagem 7 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 7 -->
+          <!-- Início Imagem 8 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 8 -->
+          <!-- Início Imagem 9 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 9 -->
+          <!-- Início Imagem 10 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 10 -->
+          <!-- Início Imagem 11 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 11 -->
+          <!-- Início Imagem 12 -->
+           <div class="gallery col-6 col-md-3">
+            <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem Relíquias" loading="lazy">
+           </div>
+          <!-- Fim Imagem 12 -->
+        </div>
+      </div>
+    </section>
+    <!-- Fim Galeria -->
+    <!-- Whatsapp (botão flutuante) -->
+     <aside class="whatsapp" aria-label="Contato rápido via Whatsapp">
+      <div class="container-grid logo-whats">
+        <a href="https://wa.link/x1zbu1" target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no Whatsapp">
+          <img class="pulse" src="./img/logos.whats.png" alt="Ícone Whatsapp">
+        </a>
+      </div>
+     </aside>
+    <!-- Fim Whatsapp (botão flutuante) -->
+
+    <!-- Aula 05 | 20/03/2026 -->
+
+    <!-- Início Footer -->
+     
+    <!-- Fim Footer -->
+  </body>
+
+<!-- JS (sempre antes do </body>) -->
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+
+</html>
