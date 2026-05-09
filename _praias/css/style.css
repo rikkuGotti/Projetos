@@ -196,13 +196,11 @@ li {
     height: 220px;
     object-fit: cover;
 }
-
 .card figcaption {
     padding: 0.8rem 1.4rem 0;
     color: var(--texto-suave);
     font-size: 0.92rem;
 }
-
 .card h3,
 .card p,
 .card ul,
@@ -210,33 +208,27 @@ li {
     margin-left: 1.4rem;
     margin-right: 1.4rem;
 }
-
-.card h3 {
+.card h3 { 
     margin-top: 0.6rem;
     margin-bottom: 0.8rem;
     font-size: 1.65rem;
 }
-
 .card ul {
     padding-left: 1.2rem;
 }
-
 .destaque-texto {
     color: var(--oceano-profundo);
 }
-
 .link-card {
     display: inline-block;
     margin-bottom: 1.6rem;
     font-weight: 700;
     color: var(--coral);
 }
-
 .guia {
     background: linear-gradient(180deg, rgba(22, 166, 182, 0.08), rgba(255, 250, 241, 0.7)),
     linear-gradient(90deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.2));
 }
-
 .grade-guia {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
