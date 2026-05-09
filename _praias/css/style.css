@@ -551,3 +551,136 @@ font-size: 1.5rem;
 /* 0,5 > Parte 4 > Finalizar CSS e entregar PRINTS com todos HTML's */
 
 /* Enrico Pimentel Gotti Encarnação || 250779 */
+
+.barra-ferramentas { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.menu-demo {
+    display: grid;
+    gap: 1rem;
+}
+
+.menu-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.menu-acoes,
+.barra-ferramentas {
+    padding: 0.85rem 1.1rem;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(7, 59, 76, 0.1);
+    color: var(--oceano-profundo);
+    font: inherit;
+    font-weight: 700;
+}
+
+.menu-acoes button {
+    background: rgba(235, 111, 77, 0.14);
+    color: #7a341f;
+}
+
+.painel-toolbar {
+    padding: 1.1rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(7, 59, 76, 0.14);
+    background: rgba(255, 250, 241, 0.82);
+    transition: background-color 0.2s ease, transdorm 0.2s ease;
+}
+
+.painel-toolbar.modo-normal {
+    background: rgba(255, 250, 241, 0.82);
+}
+
+.painel-toolbar.modo-destaque {
+    background: rgba(245, 166, 35, 0.2);
+    transform: scale(1.01);
+}
+
+.painel-toolbar.modo-compacto {
+    background: rgba(22, 166, 182, 0.12);
+    max-width: 28rem;
+}
+
+@media (max-width: 980px) {
+    .grade-definicoes,
+    .grade-recursos,
+    .quadro-info,
+    .painel-duplo,
+    .area-drag,
+    .lista-tags {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Terceira pagina: midias */
+
+.hero-midias {
+background: linear-gradient(
+    135deg,
+    rgba(7, 59, 76, 0.9),
+    rgba(21, 107, 138, 0.58)),
+    url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.grade-midias {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.bloco-midia {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--borda);
+    border-radius: 28px;
+    box-shadow: var(--sombra);
+}
+
+.bloco-midia audio,
+.bloco-midia video {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 16px;
+}
+
+.video-embed {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.bloco-codigo {
+    margin: 1rem 0 0;
+    padding: 1rem;
+    border-radius: 18px;
+    overflow-x: auto;
+    background: rgba(7, 59, 76, 0.1);
+}
+
+@media (max-width: 980px) {
+    .grade-midias {
+        grid-template-columns: 1fr;
+    }
+
+    .bloco-midia-largo {
+        grid-column: span 1;
+    }
+}
