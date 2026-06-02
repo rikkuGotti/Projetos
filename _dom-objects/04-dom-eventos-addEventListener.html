@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM - Eventos</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            background: #0b72b9;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1>Exemplo 04 - Clique neste título</h1>
+        <p>O evento de clique está sendo monitorado com <code>addEventListener</code>.</p>
+    </main>
+
+    <script>
+        let titulo = document.querySelector('h1');
+        titulo.addEventListener('click', () => {
+            window.alert('Pare de clicar no título!');
+        });
+    </script>
+</body>
+</html>

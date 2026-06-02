@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM - Seletores</title>
+
+    <style>
+        body {
+            font-family: arial;
+            margin: 40px;
+            background: #f4f6f8;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px;
+            max-width: 700px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+
+        .botao-rotacionar {
+            background: #8b5af6;
+        }
+
+        .botao-rotacionar {
+            background: #222;
+        }
+
+        
+        .mensagem {
+            background-color: #eaf6ff; 
+            border: 1px solid #007acc;
+            padding: 10px;
+            border-radius: 5px;
+            color: #007acc;
+            font-weight: bold;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<main class="card">
+    <h1>Exemplo 01 - Selecionando elementos no DOM</h1>
+
+    <div>
+        <p class="paragrafo1">Primeiro parágrafo</p>
+    </div>
+
+    <div>
+        <ul>
+            <li id="item1">Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </div>
+
+    <div class="mensagem"></div>
+</main>
+
+<script>
+    let tituloPagina = document.querySelector("title");
+    console.log("Título da página:", tituloPagina.textContent);
+
+    let paragrafoPorClasse = document.querySelector(".paragrafo1");
+    paragrafoPorClasse.textContent = "Parágrafo modificado com querySelector";
+
+    let item = document.querySelector("#item1");
+    item.textContent = "Item 1 modificado pelo ID";
+
+    let listaLi = document.querySelectorAll("li");
+    listaLi[1].textContent = "Item 2 modificado com querySelectorAll";
+
+    let mensagem = document.querySelector(".mensagem");
+    mensagem.textContent = "Todos os elementos foram acessados e modificados com JavaScript.";
+</script>
+
+</body>
+</html>

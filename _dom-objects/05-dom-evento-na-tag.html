@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM - Evento direto</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .area {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0b72b9;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body onclick="clicou()">
+    <main class="area">
+        <h1>Exemplo 05 - Evento diretamente na tag</h1>
+        <p>Clique em qualquer lugar da página.</p>
+        <p>O evento foi declarado no body com <strong>onclick="clicou()"</strong>.</p>
+    </main>
+
+    <script>
+        function clicou() {
+            window.alert('Você clicou na página!');
+        }
+    </script>
+</body>
+</html>

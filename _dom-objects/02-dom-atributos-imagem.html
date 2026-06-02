@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom - alterando atributos de imagem com JS</title>
+    <style>
+        body {
+            font-family: arial;
+            margin: 40px;
+            background: #f4f6f8;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px;
+            max-width: 700px;
+        }
+
+        img {
+            display: block;
+            margin-top: 16px;
+            border-radius: 12px;
+            border: 4px solid #ddd;
+            transition: transform 0.4 ease;
+        }
+
+        button {
+            margin-top: 16px;
+            margin-right: 8px;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #0b72b9;
+            color: white;
+            font-weight: bold;
+        }
+
+        .botao-rotacionar {
+            background: #8b5af6;
+        }
+
+        .botao-rotacionar {
+            background: #222;
+        }
+    </style>
+</head>
+<body>
+    
+    <main class="card">
+        <h1>Exemplo 02 - Alterando atributos de uma imagem</h1>
+
+        <p>Clique nos botões para alterar atributos <strong>src</strong>, <strong>alt</strong>, <strong>width</strong> e aplicar a rotação utilizando JS</p>
+
+        <img id="foto" src="https://picsum.photos/200/300" alt="Imagem Inicial">
+
+        <button onclick="alterarImagem()">Alterar Imagem</button>
+        <button class="botao-rotacionar" onclick="rotacionarImagem()">Rotacionar 90º graus</button>
+        <button class="botao-reset" onclick="resetImagem()">Resetar Imagem</button>
+    </main>
+
+    <script>
+        
+        function alterarImagem() {
+            let imagem = document.querySelector('#foto');
+
+            //setAttribute recebe 3 parâmetros
+            imagem.setAttribute('src', 'https://picsum.photos/200/300?grayscale');
+            imagem.setAttribute('alt', 'Imagem alterada para tons de cinza via JavaScript');
+            imagem.setAttribute('width', '320');
+        }
+
+        function resetImagem() {
+            let imagem = document.querySelector('#foto');
+
+            //setAttribute recebe 3 parâmetros
+            imagem.setAttribute('src', 'https://picsum.photos/200/300');
+            imagem.setAttribute('alt', 'Imagem Inicial');
+
+            //Remove o width aplicado via JS
+            imagem.removeAttribute('width');
+
+            //Remove a rotação aplicada via JS
+            imagem.style.transform = 'rotate(0deg)';
+        }
+
+        function rotacionarImagem() {
+            let imagem = document.querySelector('#foto');
+
+            //A propriedade transform permite aplicar transformações visuais
+            //rotate(90deg)
+            imagem.style.transform = 'rotate(90deg)';
+            imagem.style.margin = '0 0 0 80px';
+            //margin: 0 0 0 0 > top, right, botton and left
+        }
+    </script>
+
+</body>
+</html>
