@@ -1,32 +1,37 @@
-📂 Projetos
-Repositório destinado ao armazenamento e organização de projetos desenvolvidos durante atividades acadêmicas e cursos de programação.
-Aqui você encontrará exercícios práticos, pequenos sistemas e páginas web criadas para estudo e aprimoramento das habilidades em HTML, CSS e JavaScript.
+# 📂 Projetos
 
-🚀 Tecnologias Utilizadas
-HTML – Estruturação das páginas
+Bem-vindo ao meu repositório de **projetos acadêmicos e de estudo**!  
+Aqui estão exercícios, páginas web e pequenos sistemas desenvolvidos para praticar **HTML, CSS e JavaScript**.
 
-CSS – Estilização e layout responsivo
+---
 
-JavaScript – Interatividade e manipulação dinâmica de elementos
+## 🚀 Tecnologias
+- 🖋️ **HTML** – Estruturação das páginas  
+- 🎨 **CSS** – Estilização e layout responsivo  
+- ⚡ **JavaScript** – Interatividade e manipulação dinâmica  
 
-📁 Estrutura do Repositório
-_adventure → Atividade prática (17/04)
+---
 
-_ancoras-galeria → Exercício com links e navegação
+## 📁 Projetos
+- 🌍 **Adventure** – Atividade prática (17/04)  
+- 🔗 **Âncoras Galeria** – Exercício com links e navegação  
+- 📎 **Links** – Projeto de prática com hyperlinks  
+- 👋 **Olá** – Exercício introdutório em HTML  
+- 🏖️ **Praias** – Página com JavaScript e conteúdo dinâmico  
+- 📊 **Tabelas** – Exercício com tabelas em HTML  
 
-_links → Projeto de prática com hyperlinks
+---
 
-_ola → Exercício introdutório em HTML
+## 🧑‍💻 Autor
+**Enrico Gotti**  
+🎓 Estudante de **Análise e Desenvolvimento de Sistemas (FACENS)**  
+💻 Técnico em Informática – **SENAC**  
+📌 Apaixonado por tecnologia, programação e desenvolvimento criativo.
 
-_praias → Página com JavaScript adicionado e geração dinâmica de conteúdo
+---
 
-_tabelas → Exercício com tabelas em HTML
+## 🎯 Objetivo
+Este repositório funciona como **portfólio de aprendizado**, reunindo projetos que mostram minha evolução em programação web e boas práticas de desenvolvimento.  
+A ideia é expandir continuamente com novos exercícios e projetos pessoais.
 
-🧑‍💻 Autor
-Enrico Gotti  
-Estudante de Análise e Desenvolvimento de Sistemas (FACENS) e Técnico em Informática (SENAC).
-Apaixonado por tecnologia, programação e desenvolvimento de soluções criativas.
-
-📌 Objetivo
-Este repositório serve como portfólio de aprendizado, reunindo projetos que demonstram evolução em programação web e boas práticas de desenvolvimento.
-A ideia é expandir continuamente com novos exercícios, projetos acadêmicos e pessoais.
+✨ Obrigado por visitar meu repositório!  
